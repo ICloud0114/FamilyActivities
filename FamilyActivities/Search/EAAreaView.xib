@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="EAAreaView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="399"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <userGuides>
+                <userLayoutGuide location="300" affinity="minY"/>
+            </userGuides>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JPb-UV-waP">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="320" id="W4i-Xo-Xmy"/>
+                        <constraint firstAttribute="height" constant="320" id="zIU-V3-ax5"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Whi-Pn-W5i">
+                    <rect key="frame" x="0.0" y="0.0" width="160" height="320"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="320" id="mUu-SP-ulT"/>
+                    </constraints>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="K4l-HJ-dRU"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="R73-E4-ocW"/>
+                    </connections>
+                </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Tlc-Ho-7zY">
+                    <rect key="frame" x="160" y="0.0" width="160" height="320"/>
+                    <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="320" id="cjZ-Gp-JhC"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="npC-uk-LvJ"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="6r1-cb-oB9"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.49803921568627452" green="0.49803921568627452" blue="0.49803921568627452" alpha="0.5" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="JPb-UV-waP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="4Cw-Mk-v5s"/>
+                <constraint firstAttribute="trailing" secondItem="Tlc-Ho-7zY" secondAttribute="trailing" id="5ws-Rl-D9V"/>
+                <constraint firstAttribute="trailing" secondItem="JPb-UV-waP" secondAttribute="trailing" id="8n0-Ou-5kd"/>
+                <constraint firstItem="Whi-Pn-W5i" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9Sb-tm-rxR"/>
+                <constraint firstItem="JPb-UV-waP" firstAttribute="height" secondItem="Tlc-Ho-7zY" secondAttribute="height" id="CfQ-8r-zl4"/>
+                <constraint firstItem="Tlc-Ho-7zY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="M7A-pc-xr3"/>
+                <constraint firstItem="Whi-Pn-W5i" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Y3A-z5-haZ"/>
+                <constraint firstItem="JPb-UV-waP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ZkV-c3-U2g"/>
+                <constraint firstItem="Tlc-Ho-7zY" firstAttribute="leading" secondItem="Whi-Pn-W5i" secondAttribute="trailing" id="h9e-NP-Eim"/>
+                <constraint firstItem="JPb-UV-waP" firstAttribute="height" secondItem="Whi-Pn-W5i" secondAttribute="height" id="jaI-8Z-gnU"/>
+                <constraint firstItem="Tlc-Ho-7zY" firstAttribute="width" secondItem="Whi-Pn-W5i" secondAttribute="width" id="xca-gO-y1A"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="firstLevelTableView" destination="Whi-Pn-W5i" id="iRC-t4-jGX"/>
+                <outlet property="secondLevelTableView" destination="Tlc-Ho-7zY" id="10k-oc-z5G"/>
+            </connections>
+            <point key="canvasLocation" x="470" y="97.5"/>
+        </view>
+    </objects>
+</document>

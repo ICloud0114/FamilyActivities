@@ -1,0 +1,62 @@
+
+//
+//  PrefixHeader.pch
+//  FamilyActivities
+//
+//  Created by LoveLi1y on 15/1/20.
+//  Copyright (c) 2015年 LoveLi1y. All rights reserved.
+//
+
+#ifndef FamilyActivities_PrefixHeader_pch
+#define FamilyActivities_PrefixHeader_pch
+
+
+#ifdef __OBJC__
+#import "UINavigationItem+CustomItem.h"
+#import "UIImageView+WebCache.h"
+#import "SVPullToRefresh.h"
+#import "ATMHud.h"
+#import "ATMHudDelegate.h"
+#import "UIColor+ColorUtil.h"
+#import "ZYHTTPRequest.h"
+#endif
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#define DATABASENAME @"Activities.db"
+#define FAVORITIES_TB  @"Favorities_TB" //收藏
+#define AGE_TB  @"Age_TB" //年龄
+#define FIRST_LEVEL_AREA_TB  @"FirstLevelArea_TB" //一级区域
+#define SECOND_LEVEL_AREA_TB  @"SecondLevelArea_TB" //二级区域
+#define SEARCH_MENU_TB  @"SearchMenu_TB" //搜索列表
+
+#define HiOS7 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
+
+#define LiOS7 ([[[UIDevice currentDevice] systemVersion] floatValue] < 7.0)
+
+#define HiOS8 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
+
+#define INCREMENT (([[[UIDevice currentDevice]systemVersion]floatValue] >= 7.0)?20:20)
+
+#define NAVHEIGHT (([[[UIDevice currentDevice]systemVersion]floatValue] >= 7.0)?44:44)
+
+#define TABBARHEIGHT 49
+
+#define SCREENWIDTH                 ([UIScreen mainScreen].bounds.size.width)
+#define SCREENHEIGHT                ([UIScreen mainScreen].bounds.size.height)
+#define WIDTH(a)                    (a).frame.size.width
+#define HEIGHT(a)                   (a).frame.size.height
+#define X(a)                        (a).frame.origin.x
+#define Y(a)                        (a).frame.origin.y
+
+
+#ifdef DEBUG
+#   define DLog(fmt, ...) {NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);}
+#   define ELog(err) {if(err) DLog(@"%@", err)}
+#else
+#   define DLog(...)
+#   define ELog(err)
+#endif
+
+
+
+#endif

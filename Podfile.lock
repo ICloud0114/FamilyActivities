@@ -1,0 +1,13 @@
+PODS:
+  - Kiwi (2.3.1)
+  - MJRefresh (1.4.6)
+
+DEPENDENCIES:
+  - Kiwi
+  - MJRefresh
+
+SPEC CHECKSUMS:
+  Kiwi: f038a6c61f7a9e4d7766bff5717aa3b3fdb75f55
+  MJRefresh: 2eaa3fd8f67fbb86497840fb0167446f7eb61dc7
+
+COCOAPODS: 0.36.4

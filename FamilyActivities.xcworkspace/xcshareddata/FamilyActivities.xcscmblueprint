@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "98EDBF8807A5BB9A0289C0193E1DA44306B55924",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B18199B64B6F6F8022EE5206B8F804FA811B4EAD" : 0,
+    "98EDBF8807A5BB9A0289C0193E1DA44306B55924" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D05C2C8F-A0DF-4E74-89F7-C954466F36DF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B18199B64B6F6F8022EE5206B8F804FA811B4EAD" : "",
+    "98EDBF8807A5BB9A0289C0193E1DA44306B55924" : "FamilyActivities\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "FamilyActivities",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "FamilyActivities.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ICloud0114\/FamilyActivities.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "98EDBF8807A5BB9A0289C0193E1DA44306B55924"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/git.oschina.net\/fenghenxue\/qinzi.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B18199B64B6F6F8022EE5206B8F804FA811B4EAD"
+    }
+  ]
+}
